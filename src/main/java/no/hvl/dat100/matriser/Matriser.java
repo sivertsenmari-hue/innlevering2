@@ -2,19 +2,33 @@ package no.hvl.dat100.matriser;
 
 public class Matriser {
 
-	// a)
+		// a)
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++){
+				System.out.print(matrise[i][j] + "");
+			}
+			System.out.println();
+		}
 	}
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
+		String tekst = "";
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
-		
+		for(int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++){
+
+				if (j > 0) {
+					tekst = tekst + " ";
+				}
+
+				tekst = tekst + matrise[i][j];
+			}
+			tekst = tekst + "\n";
+		}
+		return tekst;
 	}
 
 	// c)
