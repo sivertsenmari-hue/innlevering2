@@ -19,7 +19,12 @@ public class Matriser {
 
 		for(int i = 0; i < matrise.length; i++){
 			for(int j = 0; j < matrise[i].length; j++){
-				tekst = tekst + matrise[i][j] + " ";
+
+				tekst = tekst + matrise[i][j];
+
+				if (j < matrise[i].length - 1){
+					tekst = tekst + " ";
+				}
 
 			}
 			tekst = tekst + "\n";
